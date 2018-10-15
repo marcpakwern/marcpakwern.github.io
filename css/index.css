@@ -149,23 +149,22 @@ z-index:15;
 
 		.circular-logo-mobile{
 			display:block;
-			
+			width:100px;
+			height:100px;
+			position:absolute;
+			top:-10px;
+		}
+		.rounded-circle-link{
+				width:100px;
+				height:100px;
 		}
 				
 		 .circular-logo-mobile img{
-			 width:130px;
-			 height:130px;
-			 margin-top:19px;
+			 width:100px;
+			 height:100px;			 
+			 position:absolute;
+			
 		 }
-		.circular-logo{
-			position:absolute;
-			left:0 !important;
-		}
-	  .circular-logo img{
-		  width:100px;
-		  height:100px;
-		  margin-top:13px;
-		  
 	  }
 	  
 	  
