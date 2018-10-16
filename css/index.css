@@ -165,7 +165,11 @@ z-index:15;
 			 position:absolute;
 			
 		 }
+<<<<<<< HEAD
 	  
+=======
+	  }
+>>>>>>> 07d59955178265c2ec5bbcbe733446d2bac2dcc6
 	  
 	  
 		.rounded-circle-link {
@@ -178,10 +182,14 @@ z-index:15;
 	  .dot-custom{
 		  display:none;
 	  }
+<<<<<<< HEAD
 	  .nav-item{
 		  
 	  }
 
+=======
+	  
+>>>>>>> 07d59955178265c2ec5bbcbe733446d2bac2dcc6
 	  
  }
  
@@ -615,6 +623,7 @@ section .section-title {
 .menu-row{
 	width:80%;
 }
+<<<<<<< HEAD
 .nav-fill .nav-item {
     -webkit-box-flex: 1;
     -ms-flex: 1 1 auto;
@@ -655,3 +664,5 @@ section .section-title {
 .hr-class{
 	margin-top:-20px;
 }
+=======
+>>>>>>> 07d59955178265c2ec5bbcbe733446d2bac2dcc6
