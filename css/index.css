@@ -65,7 +65,7 @@
 	color:#e4b95b;
 	font-size:20px;
 	font-weight:bold;
-	margin-top:10px;
+	margin-top:6px;
 }
 .navbar-bottom-custom a:link,
 .navbar-bottom-custom a:hover,
@@ -149,24 +149,23 @@ z-index:15;
 
 		.circular-logo-mobile{
 			display:block;
-			
+			width:100px;
+			height:100px;
+			position:absolute;
+			top:-10px;
+		}
+		.rounded-circle-link{
+				width:100px;
+				height:100px;
 		}
 				
 		 .circular-logo-mobile img{
-			 width:130px;
-			 height:130px;
-			 margin-top:19px;
+			 width:100px;
+			 height:100px;			 
+			 position:absolute;
+			
 		 }
-		.circular-logo{
-			position:absolute;
-			left:0 !important;
-		}
-	  .circular-logo img{
-		  width:100px;
-		  height:100px;
-		  margin-top:13px;
-		  
-	  }
+	  
 	  
 	  
 		.rounded-circle-link {
@@ -180,7 +179,7 @@ z-index:15;
 		  display:none;
 	  }
 	  .nav-item{
-		  border-bottom:1px solid #444444;
+		  
 	  }
 
 	  
@@ -206,6 +205,7 @@ z-index:15;
 .navbar-toggler-right {
     
 	position:absolute;
+	top:8px;
 	right:10px;
 }
 
@@ -466,7 +466,7 @@ section .section-title {
 .nav-tabs{
 	border-radius:30px;
 	background:#fff;
-	width:80%;
+	width:90%;
 	padding-bottom:1px;
 	margin:auto;
 	box-shadow: 0px 0px 5px 5px #dedede;
@@ -499,7 +499,8 @@ section .section-title {
 }
 .food-items-desc h2{
 	color:#fff;
-	margin-top:10px;	
+	margin-top:10px;
+	
 }
 
 .food-items-desc p{
@@ -607,12 +608,50 @@ section .section-title {
 }
 
 .photo-row{
-	margin-top:10px;
+	margin-top:20px;
 }
 .photo-item img{
-	width:200px;
-	height:200px;
 }
 .menu-row{
 	width:80%;
+}
+.nav-fill .nav-item {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    text-align: center;
+    border-radius: 30px !important;
+}
+.crop {
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+}
+
+.crop img {
+    width: 350px;
+    height: 350px;
+    margin: -75px 0 0 -100px;
+	
+}
+.food-menu-desc h4{
+	color:#444;
+}
+
+.food-menu-desc p{
+	color:#888;
+}
+.price{
+	
+}
+.price p{
+	color:#888;
+	
+	
+}
+.menu-desc{
+	margin-top:-10px;
+}
+.hr-class{
+	margin-top:-20px;
 }
