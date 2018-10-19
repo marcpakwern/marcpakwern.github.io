@@ -1,6 +1,7 @@
 <html>
 	<head>
-		<title>Sagarmatha france resturant</title>
+		<title>Welcome to Sagarmatha france resturant</title>
+		<link rel="shortcut icon" type="image/x-icon" href="images/logo-icon.png" />
 		<meta charset="UTF-8">
 		<link rel="stylesheet" href="css/bootstrap-reboot.min.css">
 		
@@ -22,6 +23,7 @@
 
 </head>
 <body>
+<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 		<nav class="navbar navbar-top-custom">
 			<div class="container">
 				<ul class="nav nav-pills navbar-right phone-icon">
@@ -161,12 +163,12 @@
         <div class="carousel-inner" role="listbox">
           <!-- Slide One - Set the background image for this slide in the line below -->
           <div class="carousel-item active"> 
-		  <img src="images/banner9.jpg"/>
+		  <img src="images/banner1.jpg"/>
            
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
           <div class="carousel-item">
-		  <img src="images/banner1.jpg"/>
+		  <img src="images/banner9.jpg"/>
             
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
@@ -187,7 +189,7 @@
 							Book Now
 						  </button></a>
 						  <div class="raise2">
-			<img src="images/raise-white.png"/>
+			<a href="#welcome"><img src="images/raise-white.png"/></a>
 		  </div>
         </div>
         <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -200,7 +202,7 @@
         </a>
       </div>
     </header>
-	<div class="container">
+	<div class="container" id="welcome">
 		<div class="row welcome-heading">
 			<h2>Welcome To Sagarmatha France Resturant</h2>
 		</div>
@@ -249,40 +251,41 @@
 					<div class="MultiCarousel-inner">
 						<div class="item">
 							<div class="pad15">
-								<img src="images/slider-image1.png"/>
-								<p class="lead">Tomato Pasta</p>
+							<img src="images/slider-image4.png"/>
+								<p class="lead">Samosa</p>
 								
-								<p>Rs 80</p>
-								<p>5% off</p>
+								<p>5.00€</p>
+								
+							</div>
+						</div>
+						<div class="item">
+							<div class="pad15">
+								<img src="images/slider-image1.png"/>
+								<p class="lead">Daal Bhat</p>
+								
+								<p>16.00€</p>
+								
 							</div>
 						</div>
 						<div class="item">
 							<div class="pad15">
 							<img src="images/slider-image2.png"/>
-								<p class="lead">Mutton Briyani</p>
+								<p class="lead">Nan</p>
 								
-								<p>Rs 110</p>
-								<p>5% off</p>
+								<p>2.00€</p>
+								
 							</div>
 						</div>
 						<div class="item">
 							<div class="pad15">
 							<img src="images/slider-image3.png"/>
-								<p class="lead">Aalu Dum</p>
+								<p class="lead">Halwa</p>
 								
-								<p>Rs 70</p>
-								<p>5% off</p>
+								<p>4.50€</p>
+								
 							</div>
 						</div>
-						<div class="item">
-							<div class="pad15">
-							<img src="images/slider-image3.png"/>
-								<p class="lead">Aalu Dum</p>
-								
-								<p>Rs 70</p>
-								<p>5% off</p>
-							</div>
-						</div>
+						
 					</div>
 					<button class="btn btn-primary leftLst"><</button>
 					<button class="btn btn-primary rightLst">></button>
@@ -470,7 +473,7 @@
 		</div>
 	</div>
 	<div class="raise5">
-		<img src="images/raise-yellow.png"/>
+		<a href="googlemap.html"><img src="images/raise-yellow.png"/></a>
 	</div>
 	
 <!-- ./Tabs -->
@@ -486,7 +489,26 @@
     <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
     <script src="../../assets/js/vendor/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
-		<script src="js/index.js"></script>
-		<script src="js/b4_sidebar.js"></script>
+	<script src="js/index.js"></script>
+	<script src="js/b4_sidebar.js"></script>
+	<script>
+	
+$('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') 
+        || location.hostname == this.hostname) {
+
+        var target = $(this.hash);
+        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+           if (target.length) {
+             $('html,body').animate({
+                 scrollTop: target.offset().top
+            }, 100000);
+            return false;
+        }
+    }
+});
+	
+	</script>
+	
 	</body>
 </html>

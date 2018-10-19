@@ -133,3 +133,34 @@ $(document).ready(function () {
     }
 
 });
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {
+	growShrinkLogo();
+	scrollFunction()};
+
+function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+    } else {
+        document.getElementById("myBtn").style.display = "none";
+    }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+	scrollToTop(500);
+}
+function scrollToTop(scrollDuration) {
+    var cosParameter = window.scrollY / 2,
+        scrollCount = 0,
+        oldTimestamp = performance.now();
+    function step (newTimestamp) {
+        scrollCount += Math.PI / (scrollDuration / (newTimestamp - oldTimestamp));
+        if (scrollCount >= Math.PI) window.scrollTo(0, 0);
+        if (window.scrollY === 0) return;
+        window.scrollTo(0, Math.round(cosParameter + cosParameter * Math.cos(scrollCount)));
+        oldTimestamp = newTimestamp;
+        window.requestAnimationFrame(step);
+    }
+    window.requestAnimationFrame(step);
+}
